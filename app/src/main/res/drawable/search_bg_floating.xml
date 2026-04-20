@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 1. 物理投影层：加深阴影色值并微调偏移，强化悬浮深度 -->
+    <item
+        android:left="3dp"
+        android:top="4dp">
+        <shape>
+            <corners android:radius="30dp" />
+            <solid android:color="#26000000" />
+        </shape>
+    </item>
+
+    <!-- 2. 主体：极高透明度的玻璃质感背景 -->
+    <item
+        android:bottom="2dp"
+        android:right="1dp">
+        <shape>
+            <!-- 保持通透的 90% 透明白 -->
+            <solid android:color="#E6FFFFFF" />
+            <corners android:radius="28dp" />
+            <!-- 3. 强化高亮边框：加粗并提高对比度，产生玻璃反光质感 -->
+            <stroke
+                android:width="1.5dp"
+                android:color="#80FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

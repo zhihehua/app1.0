@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- 项目自带的 MaterialComponents，现代UI -->
+    <style name="Theme.DouBao" parent="Theme.MaterialComponents.DayNight.NoActionBar.Bridge">
+        <item name="colorPrimary">#4A6FFF</item>
+        <item name="colorPrimaryVariant">#2A4BD7</item>
+        <item name="colorOnPrimary">#FFFFFF</item>
+        <item name="colorSecondary">#4A6FFF</item>
+
+        <item name="android:statusBarColor" tools:targetApi="l">#F7F8FA</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="CustomDialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="CircleAppearanceOverlay">
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <!-- 超大圆润卡片边角 -->
+    <style name="RoundedAppearanceOverlay">
+        <item name="cornerSize">24dp</item>
+    </style>
+</resources>

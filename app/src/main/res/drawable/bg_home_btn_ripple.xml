@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#26000000">
+    <item>
+        <layer-list>
+            <!-- 底部强阴影层：增强悬浮感 -->
+            <item
+                android:top="4dp"
+                android:left="2dp"
+                android:right="2dp"
+                android:bottom="0dp">
+                <shape android:shape="rectangle">
+                    <solid android:color="#33000000" />
+                    <corners android:radius="18dp" />
+                </shape>
+            </item>
+
+            <!-- 主体层 -->
+            <item
+                android:bottom="5dp"
+                android:left="0dp"
+                android:right="0dp"
+                android:top="0dp">
+                <shape android:shape="rectangle">
+                    <!-- 极其纯净的白色，与暗色背景形成强烈对比 -->
+                    <solid android:color="#FFFFFF" />
+                    <corners android:radius="18dp" />
+                    <!-- 亮色内描边，增强质感 -->
+                    <stroke
+                        android:width="1dp"
+                        android:color="#F0F0F0" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</ripple>

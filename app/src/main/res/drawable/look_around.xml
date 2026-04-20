@@ -1,0 +1,10 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="1024"
+    android:viewportHeight="1024">
+  <!-- 品牌深蓝色调 -->
+  <path
+      android:fillColor="#1A2634"
+      android:pathData="M512,128a384,384 0,1 0,0 768A384,384 0,0 0,512 128zM42.7,512a469.3,469.3 0,1 1,938.6 0A469.3,469.3 0,0 1,42.7 512zM384,341.3L384,512L298.7,512L298.7,341.3L384,341.3zM554.7,341.3L554.7,512L469.3,512L469.3,341.3h85.4zM384,597.3h85.5v85.5L384,682.8L384,597.3z"/>
+</vector>

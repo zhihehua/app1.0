@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@color/gray_325">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="新增普通笔记"
+            android:textColor="#333333"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_label_question_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标题: (题目/主题/场景等)"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="4dp"
+            android:labelFor="@+id/et_question_manual" />
+
+        <EditText
+            android:id="@+id/et_question_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:autofillHints="none" />
+
+        <TextView
+            android:id="@+id/tv_label_answer_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容: (详细解答内容)"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="4dp"
+            android:labelFor="@+id/et_answer_manual" />
+
+        <EditText
+            android:id="@+id/et_answer_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="4"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:autofillHints="none" />
+
+        <!-- 场景展示区域 -->
+        <TextView
+            android:id="@+id/tv_current_scene_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="当前场景:[未选定]"
+            android:textSize="16sp"
+            android:textColor="@color/purple_500"
+            android:textStyle="bold"
+            android:padding="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:id="@+id/tv_label_tag_manual"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="标签: (场景下属的一级分类)"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginStart="4dp"
+                android:labelFor="@+id/et_tag_manual" />
+            <TextView
+                android:id="@+id/btn_add_tag_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:padding="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_tag_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:autofillHints="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="6dp">
+            <TextView
+                android:id="@+id/tv_label_category_manual"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="细分范围: (二级分类,用户可自定义)"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginStart="4dp"
+                android:labelFor="@+id/et_category_manual" />
+            <TextView
+                android:id="@+id/btn_add_category_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" + "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#666666"
+                android:padding="4dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_category_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="text"
+            android:autofillHints="none" />
+
+        <TextView
+            android:id="@+id/tv_label_note_manual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="用户笔记: (可输入文本或添加照片)"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="6dp"
+            android:layout_marginStart="4dp"
+            android:labelFor="@+id/et_user_note_manual" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_photo_manual"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/camera"
+                app:tint="#666666" />
+
+            <ImageButton
+                android:id="@+id/btn_gallery_manual"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="12dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="centerInside"
+                android:src="@drawable/gallery"
+                app:tint="#666666" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et_user_note_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="3"
+            android:minHeight="48dp"
+            android:background="@drawable/edittext_bg"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:inputType="textMultiLine"
+            android:autofillHints="none" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="已添加的照片(点击查看/长按删除)："
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:layout_marginBottom="8dp" />
+
+        <GridLayout
+            android:id="@+id/gl_photos_manual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:columnCount="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp">
+
+            <Button
+                android:id="@+id/btn_save_manual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:minHeight="48dp"
+                android:text="确定保存"
+                android:background="@drawable/btn_detail"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/btn_cancel_manual"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/btn_detail"
+                android:minHeight="48dp"
+                android:text="取消" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

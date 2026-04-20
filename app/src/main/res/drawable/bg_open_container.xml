@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 通过负值的 top 偏移来隐藏顶部的边框线 -->
+    <item android:top="-4dp">
+        <shape>
+            <solid android:color="@android:color/transparent" />
+            <!-- 显著增强的边框色：提升透明度至约 30%，并略微加粗 -->
+            <stroke
+                android:width="2.5dp"
+                android:color="#4D1A2634" />
+            <!-- 给底部加一点圆角，更符合“容器”的直觉 -->
+            <corners
+                android:bottomLeftRadius="24dp"
+                android:bottomRightRadius="24dp" />
+        </shape>
+    </item>
+</layer-list>
